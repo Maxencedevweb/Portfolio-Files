@@ -1,12 +1,18 @@
 <script>
+import Icon from "./icons/Icon.vue"; // Importez votre composant Icon
+
 export default {
+  components: {
+    Icon
+  },
   props: {
-    redirectionLink: String, // 
-    titleCard: String, // Définir une prop 'title' pour recevoir le titre de la card
+    redirectionLink: String,
+    titleCard: String,
     imageUrl: String,
-    contentCard: String // Prop pour l'URL de l'image
+    contentCard: String,
+    iconTitles: Array // Utilisez une liste de titres d'icônes
   }
-}
+};
 </script>
 
 <template> 
@@ -16,14 +22,16 @@ export default {
         <img :src="imageUrl" alt="Card image">
          <div class="card-content">
            <p> {{ contentCard }}</p>
-           
+           <div class="icons-container">
+            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+           </div>
          </div>
         </a>
   </div>
   </template>
 
 <style scoped>
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 .card {
     
 background-color: #161b22;
@@ -34,6 +42,8 @@ background-color: #161b22;
   display: flex; /* Utilise flexbox pour centrer le contenu */
   flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre le contenu horizontalement */
+  margin-top: 10svh;
+  margin-bottom: 5svh;
 
   }  
   .card h1 {
@@ -41,11 +51,12 @@ background-color: #161b22;
   margin-bottom: 10px; /* Supprime la marge supérieure par défaut du titre */
   color:  #0090FF;
   font-size: 30px; /* Taille de police pour le titre */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 700;
   display: flex; /* Utilise flexbox pour centrer le contenu */
   flex-direction: column; /* Affiche les éléments en colonne */
   align-items: center; /* Centre le contenu horizontalement */
+  text-align: center;
 }
 
 .card img {
@@ -69,6 +80,10 @@ background-color: #161b22;
 }
 .card a {
     text-decoration: none;
+}
+.icons-container {
+  display: flex;
+  gap: 10px; /* Espacement entre les icônes */
 }
 
 </style>

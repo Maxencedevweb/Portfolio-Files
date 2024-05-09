@@ -12,19 +12,29 @@ export default {
           redirectionLink:"/Projet-PO",
           title: "Interface de Paramétrage PO",
           imageUrl: "../../public/assets/projet-bts.PNG",
-          content: "Ce projet a été réalisé dans le cadre de mon BTS, dans le but d'alléger la logistique lors des journées Portes Ouvertes..."
+          content: "Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...",
+          iconTitles: ["IconJs", "IconPhp", "IconMariaDb"]
         },
         {
           redirectionLink:"/Projet-PONG",
           title: "Pong POO",
           imageUrl: "../../public/assets/projet-bts-pong.PNG",
-          content: "Ce projet a été réalisé dans le cadre de mon BTS, dans le but d'acquérir des compétences en Programmation Orientée Objet..."
+          content: "Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...",
+          iconTitles: ["IconC++", "IconQt"]
         },
         {
           redirectionLink:"/Projet-BN",
           title: "Bataille navale",
           imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
-          content: "Ce projet a été réalisé dans le cadre de mon BTS, dans le but d'acquérir des compétences en programmation C++..."
+          content: "Projet réalisé lors de mes études, un jeu bataille navale en C++...",
+          iconTitles: ["IconC++"]
+        },
+        {
+          redirectionLink:"/Projet-FlappyBirdRA",
+          title: "Flappy Bird Réalité Augmentée",
+          imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
+          content: "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
+          iconTitles: ["IconCSharp"]
         }
       ],
       animatedCards: [] // Tableau pour stocker les index des cartes animées
@@ -50,7 +60,8 @@ export default {
       :titleCard="card.title"
       :imageUrl="card.imageUrl"
       :contentCard="card.content"
-      :class="{ 'card-component': true, 'animated': animatedCards.includes(index) }"
+      :iconTitles="card.iconTitles"
+      :class="{ 'card-component': true, 'animatedcard': animatedCards.includes(index) }"
     ></CardRealisations>
   </div>
 </template>
@@ -76,19 +87,8 @@ export default {
   scale:1.15; /* Zoom de 150% lorsque la souris survole */
 }
   
-.animated {
-  animation: slideIn 1s ease-out forwards; /* Utilisez une animation pour déplacer la carte du haut et descendre */
+.animatedcard {
+  animation: slide-to-bottom 1s ease-out forwards; /* Utilisez une animation pour déplacer la carte du haut et descendre */
 }
 
-
-@keyframes slideIn {
-  from {
-    transform: translateY(-100vh); /* Position initiale : au-dessus */
-    opacity: 0; /* Opacité initiale */
-  }
-  to {
-    transform: translateY(0); /* Position finale : à la position normale */
-    opacity: 1; /* Opacité finale */
-  }
-}
 </style>

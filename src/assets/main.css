@@ -3,3 +3,22 @@ body {
     margin: 0;
     background-color:#0a1930 ;
 }
+
+@keyframes slide-to-bottom {
+    from {
+      transform: translateY(-100vh); /* Position initiale : au-dessus */
+      opacity: 0; /* Opacité initiale */
+    }
+    to {
+      transform: translateY(0); /* Position finale : à la position normale */
+      opacity: 1; /* Opacité finale */
+    }
+  }
+  @keyframes slide-to-left {
+    0% {
+      transform: translateX(-120vh); /* Déplace le texte en dehors de l'écran vers la gauche */
+    }
+    100% {
+      transform: translateX(0); /* Déplace le texte au milieu de l'écran */
+    }
+  }
