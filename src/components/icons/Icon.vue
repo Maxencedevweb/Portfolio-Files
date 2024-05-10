@@ -29,7 +29,7 @@ export default {
         "IconMariaDb": "Icone MariaDB",
         "IconC++": "Icone C++",
         "IconCSharp": "Icone C#",
-        "IconQt": "Icone Qt"
+        "IconQt": "Icone Qt5"
         // Ajoutez d'autres titres d'icônes avec leur texte alt approprié
       };
       // Retourne le texte alt correspondant au titre de l'icône ou une chaîne vide si le titre n'est pas trouvé

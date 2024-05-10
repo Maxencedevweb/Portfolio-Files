@@ -10,21 +10,21 @@ export default {
       cards: [
         {
           redirectionLink:"/Projet-PO",
-          title: "Interface de Paramétrage PO",
+          title: "Application web paramétrage",
           imageUrl: "../../public/assets/projet-bts.PNG",
           content: "Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...",
           iconTitles: ["IconJs", "IconPhp", "IconMariaDb"]
         },
         {
           redirectionLink:"/Projet-PONG",
-          title: "Pong POO",
+          title: "Jeu Pong POO",
           imageUrl: "../../public/assets/projet-bts-pong.PNG",
           content: "Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...",
           iconTitles: ["IconC++", "IconQt"]
         },
         {
           redirectionLink:"/Projet-BN",
-          title: "Bataille navale",
+          title: "Jeu Bataille navale",
           imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
           content: "Projet réalisé lors de mes études, un jeu bataille navale en C++...",
           iconTitles: ["IconC++"]
@@ -32,7 +32,7 @@ export default {
         {
           redirectionLink:"/Projet-FlappyBirdRA",
           title: "Flappy Bird Réalité Augmentée",
-          imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
+          imageUrl: "../../public/assets/projet-flappybird.PNG",
           content: "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
           iconTitles: ["IconCSharp"]
         }
@@ -67,17 +67,16 @@ export default {
 </template>
 
 <style>
-.realisations {
+  .realisations {
   display: flex; /* Utilise Flexbox */
   flex-wrap: wrap; /* Permet l'enroulement des éléments */
-  justify-content: space-between; /* Espace les éléments de manière égale */
+  justify-content: space-between; /* Aligne les éléments sur le côté gauche */
 }
-
 
 .card-component {
   margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 20px; /* Espacement entre les lignes */
   opacity: 0;
   transition: scale 0.3s ease-out; /* Utilise une transition pour l'effet de zoom */

@@ -19,19 +19,19 @@
   }
 
   nav {
-    background-color: #182449;
-    color: white;
+    background-color: #212225;
+    color: #EEEEEE;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     font-size: 30px;
-    border-bottom: 2px solid #003362;
+    border-bottom: 2px solid #363A3F;
   }
   
   a
   {
     text-decoration: none;
-    color: #5472E4;
+    color: #EEEEEE;
     transition: 0.4s;
     padding: 20px;
   }

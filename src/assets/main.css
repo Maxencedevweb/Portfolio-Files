@@ -1,12 +1,12 @@
 @import './base.css';
 body { 
     margin: 0;
-    background-color:#0a1930 ;
+    background-color:#18191B ;
 }
 
 @keyframes slide-to-bottom {
     from {
-      transform: translateY(-100vh); /* Position initiale : au-dessus */
+      transform: translateY(-40vh); /* Position initiale : au-dessus */
       opacity: 0; /* Opacité initiale */
     }
     to {

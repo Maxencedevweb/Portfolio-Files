@@ -39,7 +39,7 @@ h2 {
   animation: descendre 1.2s ease-out forwards;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 993px) {
   #container-home {
     position: absolute; /* Positionnement absolu par rapport à la page */
     top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
