@@ -1,13 +1,15 @@
+<script setup>
+
+</script>
+
+
 <template>
   <div id="container-home"> 
     <h1>À propos de moi.</h1>
     <h2>Passionné par l'informatique depuis toujours. Actuellement édudiant en BTS SNIR.</h2>
+    <a href="https://github.com/Maxencedevweb" target="_blank"><img src="/Portfolio/assets/icons/github.svg" title="Mon github" alt="Icone github" height="48px"></a>
   </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -19,6 +21,10 @@
   100% {
     transform: translateX(0); /* Déplace le texte au milieu de l'écran */
   }
+}
+
+a {
+  animation: opacity 1.5s ease-in forwards;
 }
 
 h1 {

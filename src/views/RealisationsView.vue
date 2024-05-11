@@ -79,7 +79,6 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
-
   padding-left: 50px; /* Ajoute un padding de 50px à gauche */
   padding-right: 50px; /* Ajoute un padding de 50px à droite */
 }

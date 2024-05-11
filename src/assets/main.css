@@ -23,3 +23,11 @@ body {
       transform: translateX(0); /* Déplace le texte au milieu de l'écran */
     }
   }
+  @keyframes opacity {
+    0% {
+     opacity: 0; /* Déplace le texte en dehors de l'écran vers la gauche */
+    }
+    100% {
+      opacity: 1; /* Déplace le texte au milieu de l'écran */
+    }
+  }
