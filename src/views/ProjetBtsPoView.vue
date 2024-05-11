@@ -72,10 +72,21 @@ export default {
   </div>
 </template>
 
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+#container-PO {
+    position: absolute; /* Positionnement absolu par rapport à la page */
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left; /* Centre le contenu horizontalement */ 
+  }
+  
+  img {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 60px;
+  }
 
  h1 {
 
@@ -138,19 +149,6 @@ img.animated {
     margin-bottom: 0px;
   }
 }
-#container-PO {
-    position: absolute; /* Positionnement absolu par rapport à la page */
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: left; /* Centre le contenu horizontalement */
-    
-  }
-  img {
-    display: flex;
-    margin: auto;
-    width: 90%;
-    margin-bottom: 60px;
-  }
 
 .slide-to-left-scroll {
   opacity: 0;

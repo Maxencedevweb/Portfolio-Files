@@ -56,7 +56,7 @@ export default {
 </script>
 
 <template>
-  <div class="realisations">
+  <div id="container-realisations">
     <CardRealisations
       v-for="(card, index) in cards"
       :key="index"
@@ -71,8 +71,10 @@ export default {
   </div>
 </template>
 
-<style>
-  .realisations {
+<style scoped>
+
+  #container-realisations {
+  position: absolute;
   display: flex; /* Utilise Flexbox */
   flex-wrap: wrap; /* Permet l'enroulement des éléments */
   justify-content: space-between; /* Aligne les éléments sur le côté gauche */

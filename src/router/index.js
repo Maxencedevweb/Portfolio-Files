@@ -40,7 +40,16 @@ const router = createRouter({
       name: 'NotFound',
       component: HomeView
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      // Si une position de défilement sauvegardée est disponible, utilisez-la
+      return savedPosition;
+    } else {
+      // Sinon, défilez vers le haut de la nouvelle page
+      return { top: 0 };
+    }
+  }
 })
 
 export default router

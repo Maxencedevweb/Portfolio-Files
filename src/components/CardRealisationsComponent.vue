@@ -38,7 +38,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 .card {
-
+  
   width: 500px; /* La carte prend 1/4 de la largeur de l'écran */
   border-radius: 8px; /* Ajoute un peu de bord arrondi à la carte */
   padding: 10px; /* Ajoute un peu d'espacement à l'intérieur de la carte */
