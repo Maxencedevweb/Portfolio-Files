@@ -71,20 +71,23 @@ export default {
   </div>
 </template>
 
+
 <style scoped>
 
-  #container-realisations {
-  position: absolute;
-  display: flex; /* Utilise Flexbox */
-  flex-wrap: wrap; /* Permet l'enroulement des éléments */
-  justify-content: space-between; /* Aligne les éléments sur le côté gauche */
+
+#container-realisations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+
+  padding-left: 50px; /* Ajoute un padding de 50px à gauche */
+  padding-right: 50px; /* Ajoute un padding de 50px à droite */
 }
 
+
 .card-component {
-  margin-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px; /* Espacement entre les lignes */
+  margin-left: auto; /* Déplace le conteneur vers la droite pour aligner le padding à gauche */
+  margin-right: auto; /* Déplace le conteneur vers la gauche pour aligner le padding à droite */
   opacity: 0;
   transition: scale 0.3s ease-out; /* Utilise une transition pour l'effet de zoom */
 }
