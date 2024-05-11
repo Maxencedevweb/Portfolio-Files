@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import RealisationsView from '../views/RealisationsView.vue'
+import HomeView from '@/views/HomeView.vue'
+import RealisationsView from '@/views/RealisationsView.vue'
 import ProjetBtsPoView from '@/views/ProjetBtsPoView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/Portfolio/'),
   routes: [
     {
       path: '/',
@@ -37,8 +37,7 @@ const router = createRouter({
     },
     {
       path: '/:pathMatch(.*)*',
-      name: 'NotFound',
-      component: HomeView
+      redirect: '/'
     }
   ],
   scrollBehavior(to, from, savedPosition) {

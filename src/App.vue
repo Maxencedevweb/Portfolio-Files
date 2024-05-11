@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import HeaderComponent from './components/HeaderComponent.vue';
+import HeaderComponent from '/src/components/HeaderComponent.vue';
 import { useStore } from 'vuex';
 import { computed, onMounted, watch } from 'vue';
 
@@ -50,17 +50,5 @@ watch(mode, (newMode) => {
 .light-mode {
   background-color:#FAF9FB;
 }
-.dark-mode h1 {
-  color: #ffffff;
-}
-.dark-mode h2 {
-  color: #B4B4B4;
-}
 
-.light-mode h1 {
-  color:#65636D;
-}
-.light-mode h2 {
-  color:#211F26;
-}
 </style>

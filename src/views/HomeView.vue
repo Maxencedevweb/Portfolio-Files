@@ -1,7 +1,7 @@
 <template>
   <div id="container-home"> 
     <h1>À propos de moi.</h1>
-    <h2>C’est ici que vous en apprendrez d’avantage sur mes réalisations.</h2>
+    <h2>Passionné par l'informatique depuis toujours. Actuellement édudiant en BTS SNIR.</h2>
   </div>
 </template>
 

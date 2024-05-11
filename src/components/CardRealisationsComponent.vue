@@ -1,6 +1,6 @@
 <script>
 
-import Icon from "./icons/Icon.vue"; // Importez votre composant Icon
+import Icon from "/src/components/icons/Icon.vue"; // Importez votre composant Icon
 
 export default {
   components: {

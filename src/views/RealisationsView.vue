@@ -1,5 +1,5 @@
 <script>
-import CardRealisations from '../components/CardRealisationsComponent.vue';
+import CardRealisations from '/src/components/CardRealisationsComponent.vue';
 
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
         {
           redirectionLink:"/Projet-PO",
           title: "Application web paramétrage",
-          imageUrl: "../../public/assets/projet-bts.PNG",
+          imageUrl: "/Portfolio/assets/projet-bts.PNG",
           status: "En cours",
           content: "Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...",
           iconTitles: ["IconJs", "IconPhp", "IconMariaDb"]
@@ -19,7 +19,7 @@ export default {
         {
           redirectionLink:"/Projet-PONG",
           title: "Jeu Pong POO",
-          imageUrl: "../../public/assets/projet-bts-pong.PNG",
+          imageUrl: "/Portfolio/assets/projet-bts-pong.PNG",
           status: "Fini",
           content: "Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...",
           iconTitles: ["IconC++", "IconQt"]
@@ -27,7 +27,7 @@ export default {
         {
           redirectionLink:"/Projet-BN",
           title: "Jeu Bataille navale",
-          imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
+          imageUrl: "/Portfolio/assets/projet-bts-bataillenavale.PNG",
           status: "Fini",
           content: "Projet réalisé lors de mes études, un jeu bataille navale en C++...",
           iconTitles: ["IconC++"]
@@ -35,7 +35,7 @@ export default {
         {
           redirectionLink:"/Projet-FlappyBirdRA",
           title: "Flappy Bird Réalité Augmentée",
-          imageUrl: "../../public/assets/projet-flappybird.PNG",
+          imageUrl: "/Portfolio/assets/projet-flappybird.PNG",
           status: "Fini",
           content: "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
           iconTitles: ["IconCSharp"]

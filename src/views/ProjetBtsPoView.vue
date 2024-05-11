@@ -62,13 +62,13 @@ export default {
     <h1 class="animated">Interface de paramétrage pour les journées Portes Ouvertes du Lycée Léonce Vieljeux</h1>
     <h2 class="animated">Dans le cadre de mon projet de BTS, j'ai réalisé une application web en PHP/JS/MariaDB.<br> Cette application permet de configurer les différents points d'intéret du lycée pour ensuite être guidé automatiquement lors des journées portes ouvertes.</h2>
     <h2 class="animated">L'application web est doté d'un système de connexion.</h2>
-    <img class="animated" src="../../public/assets/projet-bts.PNG">
+    <img class="animated" src="/assets/projet-bts.PNG">
     <h2 class="animatedLtoR slide-to-left-scroll">Une fois connecté, l'utilisateur accède à l'interface de paramétrage des points d'intêrets.</h2>
-    <img class="animatedLtoR slide-to-left-scroll"  src="../../public/assets/projet-bts-param.PNG">
+    <img class="animatedLtoR slide-to-left-scroll"  src="/assets/projet-bts-param.PNG">
     <h2 class="animatedLtoR slide-to-left-scroll">Il peut ensuite placer les points graphiquement et y renseigner leurs informations.</h2>
-    <img class="animatedLtoR slide-to-left-scroll"  src="../../public/assets/projet-bts-param-ajouter.PNG">
+    <img class="animatedLtoR slide-to-left-scroll"  src="/assets/projet-bts-param-ajouter.PNG">
     <h2 class="animatedLtoR slide-to-left-scroll">Une fois tous les points placés, il suffit de les relier en cliquant sur les points pour former des chemins.</h2>
-    <img class="animatedLtoR slide-to-left-scroll"  src="../../public/assets/projet-bts-chemins.PNG">
+    <img class="animatedLtoR slide-to-left-scroll"  src="/assets/projet-bts-chemins.PNG">
   </div>
 </template>
 

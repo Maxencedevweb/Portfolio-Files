@@ -8,12 +8,12 @@ export default {
     iconPath() {
       // Map des titres d'icônes aux chemins SVG correspondants
       const icons = {
-        "IconPhp": "../../../public/assets/icons/php.svg",
-        "IconJs": "../../../public/assets/icons/javascript.svg",
-        "IconMariaDb": "../../../public/assets/icons/mariadb.svg",
-        "IconC++": "../../../public/assets/icons/c++.svg",
-        "IconCSharp": "../../../public/assets/icons/csharp.svg",
-        "IconQt": "../../../public/assets/icons/qt.svg"
+        "IconPhp": "/Portfolio/assets/icons/php.svg",
+        "IconJs": "/Portfolio/assets/icons/javascript.svg",
+        "IconMariaDb": "/Portfolio/assets/icons/mariadb.svg",
+        "IconC++": "/Portfolio/assets/icons/c++.svg",
+        "IconCSharp": "/Portfolio/assets/icons/csharp.svg",
+        "IconQt": "/Portfolio/assets/icons/qt.svg"
         // Ajoutez d'autres titres d'icônes avec leur chemin SVG associé
       };
       // Retourne le chemin de l'icône correspondant au titre ou null s'il n'existe pas

@@ -1,5 +1,5 @@
 <script>
-import SwitchModeButton from "./SwitchModeButtonComponent.vue";
+import SwitchModeButton from "/src/components/SwitchModeButtonComponent.vue";
 export default {
   components: {
     SwitchModeButton
@@ -41,7 +41,7 @@ export default {
     <!-- Header -->
     <div :class="{ 'fixed-header': isHeaderFixed }" id="container-nav">
       <nav>
-        <img alt="Logo site" class="logo" src="../../public/assets/M-icon.png" height="100vh" />
+        <img alt="Logo site" class="logo" src="/assets/M-icon.png" height="100vh" />
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/Realisations">Mes réalisations</RouterLink>
         <switch-mode-button class="switch-mode-button"></switch-mode-button>
