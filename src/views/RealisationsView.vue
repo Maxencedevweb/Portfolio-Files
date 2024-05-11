@@ -12,6 +12,7 @@ export default {
           redirectionLink:"/Projet-PO",
           title: "Application web paramétrage",
           imageUrl: "../../public/assets/projet-bts.PNG",
+          status: "En cours",
           content: "Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...",
           iconTitles: ["IconJs", "IconPhp", "IconMariaDb"]
         },
@@ -19,6 +20,7 @@ export default {
           redirectionLink:"/Projet-PONG",
           title: "Jeu Pong POO",
           imageUrl: "../../public/assets/projet-bts-pong.PNG",
+          status: "Fini",
           content: "Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...",
           iconTitles: ["IconC++", "IconQt"]
         },
@@ -26,6 +28,7 @@ export default {
           redirectionLink:"/Projet-BN",
           title: "Jeu Bataille navale",
           imageUrl: "../../public/assets/projet-bts-bataillenavale.PNG",
+          status: "Fini",
           content: "Projet réalisé lors de mes études, un jeu bataille navale en C++...",
           iconTitles: ["IconC++"]
         },
@@ -33,6 +36,7 @@ export default {
           redirectionLink:"/Projet-FlappyBirdRA",
           title: "Flappy Bird Réalité Augmentée",
           imageUrl: "../../public/assets/projet-flappybird.PNG",
+          status: "Fini",
           content: "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
           iconTitles: ["IconCSharp"]
         }
@@ -59,6 +63,7 @@ export default {
       :redirectionLink="card.redirectionLink"
       :titleCard="card.title"
       :imageUrl="card.imageUrl"
+      :statusCard="card.status"
       :contentCard="card.content"
       :iconTitles="card.iconTitles"
       :class="{ 'card-component': true, 'animatedcard': animatedCards.includes(index) }"

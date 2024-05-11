@@ -22,6 +22,20 @@ const router = createRouter({
       component: ProjetBtsPoView
     },
     {
+      path: '/Projet-PONG',
+      name: 'projet-pong',
+      component: RealisationsView
+    },
+    {
+      path: '/Projet-BN',
+      name: 'projet-bn',
+      component: RealisationsView
+    },    {
+      path: '/Projet-FlappyBirdRA',
+      name: 'projet-flappybirdra',
+      component: RealisationsView
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: HomeView

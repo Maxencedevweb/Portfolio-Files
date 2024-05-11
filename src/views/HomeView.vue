@@ -22,7 +22,6 @@
 }
 
 h1 {
-  color: #EEEEEE;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 60px;
@@ -32,11 +31,24 @@ h1 {
 }
 
 h2 {
-  color: #B4B4B4;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
   animation: descendre 1.2s ease-out forwards;
+}
+
+.dark-mode h1 {
+  color: #ffffff;
+}
+.dark-mode h2 {
+  color: #B4B4B4;
+}
+
+.light-mode h1 {
+  color:#65636D;
+}
+.light-mode h2 {
+  color:#211F26;
 }
 
 @media (min-width: 993px) {

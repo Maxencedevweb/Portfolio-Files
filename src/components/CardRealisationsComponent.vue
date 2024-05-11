@@ -1,4 +1,5 @@
 <script>
+
 import Icon from "./icons/Icon.vue"; // Importez votre composant Icon
 
 export default {
@@ -9,6 +10,7 @@ export default {
     redirectionLink: String,
     titleCard: String,
     imageUrl: String,
+    statusCard: String,
     contentCard: String,
     iconTitles: Array // Utilisez une liste de titres d'icônes
   }
@@ -17,25 +19,27 @@ export default {
 
 <template> 
     <div class="card">
-        <a :href="redirectionLink">
+        <router-link :to=redirectionLink>
         <h1>{{ titleCard }}</h1>
         <img :src="imageUrl" alt="Card image">
          <div class="card-content">
+          <p>Statut : {{ statusCard }}</p>
            <p> {{ contentCard }}</p>
            <div class="icons-container">
             <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
            </div>
+         
          </div>
-        </a>
+        </router-link>
+        
   </div>
   </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 .card {
+
   width: 500px; /* La carte prend 1/4 de la largeur de l'écran */
-  background-color: #272A29;
-  border: 1px solid  #363A3F; /* Ajoute une bordure à la carte */
   border-radius: 8px; /* Ajoute un peu de bord arrondi à la carte */
   padding: 10px; /* Ajoute un peu d'espacement à l'intérieur de la carte */
   display: flex; /* Utilise flexbox pour centrer le contenu */
@@ -47,7 +51,6 @@ export default {
   .card h1 {
   margin-top: 0;
   margin-bottom: 10px; /* Supprime la marge supérieure par défaut du titre */
-  color:  #EDEEF0;
   font-size: 30px; /* Taille de police pour le titre */
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
@@ -62,7 +65,6 @@ export default {
   height: 300px;
   padding: 0;
   margin: -3px;
-  border: 4px solid #363A3F;
   border-radius:8px; /* Ajoute un peu de bord arrondi à l'image */
 }
 
@@ -71,7 +73,6 @@ export default {
   margin-top: 10px; /* Supprime la marge supérieure par défaut du titre */
   margin-left: 8px;
   margin-right: 8px;
-  color: #52607a;
   font-size: 15; /* Taille de police pour le titre */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -83,5 +84,40 @@ export default {
   display: flex;
   gap: 10px; /* Espacement entre les icônes */
 }
+
+
+.dark-mode .card {
+  background-color: #272A29;
+  border: 1px solid  #363A3F; /* Ajoute une bordure à la carte */
+}
+.dark-mode .card img {
+  border: 4px solid #363A3F;
+}
+
+.dark-mode .card h1 {
+  color: #EEEEEE;
+}
+
+.dark-mode .card p {
+  color: #52607a;
+}
+
+.light-mode .card {
+  background-color: #E3DFE6;
+  border: 1px solid  #DBD8E0; /* Ajoute une bordure à la carte */
+}
+.light-mode .card img {
+  border: 4px solid #363A3F;
+}
+
+.light-mode .card h1 {
+  color: #65636D;
+}
+
+.light-mode .card p {
+  color: #52607a;
+}
+
+
 
 </style>

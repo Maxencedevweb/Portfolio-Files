@@ -1,7 +1,8 @@
 @import './base.css';
+
 body { 
     margin: 0;
-    background-color:#18191B ;
+    height: 100vh;
 }
 
 @keyframes slide-to-bottom {
