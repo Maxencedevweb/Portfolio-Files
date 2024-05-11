@@ -7,7 +7,7 @@
   <div id="container-home"> 
     <h1>À propos de moi.</h1>
     <h2>Passionné par l'informatique depuis toujours. Actuellement édudiant en BTS SNIR.</h2>
-    <a href="https://github.com/Maxencedevweb" target="_blank"><img src="/Portfolio/assets/icons/github.svg" title="Mon github" alt="Icone github" height="48px"></a>
+    <a href="https://github.com/Maxencedevweb" target="_blank"><img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" height="48px"></a>
   </div>
 </template>
 
