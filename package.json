@@ -47,12 +47,12 @@
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maxencedevweb/Portfolio.git"
+    "url": "git+https://github.com/Maxencedevweb/Portfolio-Files.git"
   },
   "author": "Hirault Maxence",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Maxencedevweb/Portfolio/issues"
+    "url": "https://github.com/Maxencedevweb/Portfolio-Files/issues"
   },
-  "homepage": "https://github.com/Maxencedevweb/Portfolio#readme"
+  "homepage": "https://github.com/Maxencedevweb/Portfolio-Files#readme"
 }
