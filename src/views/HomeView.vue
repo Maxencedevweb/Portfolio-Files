@@ -57,12 +57,12 @@ h2 {
   color:#211F26;
 }
 
-@media (min-width: 993px) {
+
   #container-home {
     position: absolute; /* Positionnement absolu par rapport à la page */
     top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
     padding-left: 10%;
     text-align: left; /* Centre le contenu horizontalement */
   }
-}
+
 </style>
