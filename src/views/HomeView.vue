@@ -11,7 +11,7 @@
       <a href="https://github.com/Maxencedevweb" target="_blank">
         <img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" class="icon" />
       </a>
-      <a href="www.linkedin.com/in/maxence-hirault-90b66324b" target="_blank">
+      <a href="https://linkedin.com/in/maxence-hirault-90b66324b" target="_blank">
         <img src="/assets/icons/linkedin.svg" title="Mon linkedin" alt="Icone linkedin" class="icon" />
       </a>
     </div>
