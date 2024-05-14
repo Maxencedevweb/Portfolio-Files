@@ -7,7 +7,14 @@
   <div id="container-home"> 
     <h1>À propos de moi.</h1>
     <h2>Passionné par l'informatique depuis toujours. Actuellement édudiant en BTS SNIR.</h2>
-    <a href="https://github.com/Maxencedevweb" target="_blank"><img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" height="48px"></a>
+    <div class="icons">
+      <a href="https://github.com/Maxencedevweb" target="_blank">
+        <img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" class="icon" />
+      </a>
+      <a href="www.linkedin.com/in/maxence-hirault-90b66324b" target="_blank">
+        <img src="/assets/icons/linkedin.svg" title="Mon linkedin" alt="Icone linkedin" class="icon" />
+      </a>
+    </div>
   </div>
 </template>
 
@@ -23,9 +30,25 @@
   }
 }
 
-a {
-  animation: opacity 1.5s ease-in forwards;
+
+#container-home {
+    position: absolute; /* Positionnement absolu par rapport à la page */
+    top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
+    padding-left: 10%;
+    text-align: left; /* Centre le contenu horizontalement */
+  }
+
+.icons {
+    display: flex;
 }
+
+.icon {
+  height: 48px; /* Définit la hauteur de toutes les icônes */
+  width: 48px;
+  margin-right: 8px; /* Ajoute un espace entre les icônes */
+  animation: opacity 1.8s ease-in forwards;
+}
+
 
 h1 {
   font-family: 'Inter', sans-serif;
@@ -56,13 +79,4 @@ h2 {
 .light-mode h2 {
   color:#211F26;
 }
-
-
-  #container-home {
-    position: absolute; /* Positionnement absolu par rapport à la page */
-    top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
-    padding-left: 10%;
-    text-align: left; /* Centre le contenu horizontalement */
-  }
-
 </style>
