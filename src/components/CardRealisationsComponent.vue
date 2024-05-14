@@ -40,7 +40,7 @@ export default {
 .card {
   
   width: 500px; /* La carte prend 1/4 de la largeur de l'écran */
-  border-radius: 8px; /* Ajoute un peu de bord arrondi à la carte */
+  border-radius: 18px; /* Ajoute un peu de bord arrondi à la carte */
   padding: 10px; /* Ajoute un peu d'espacement à l'intérieur de la carte */
   display: flex; /* Utilise flexbox pour centrer le contenu */
   flex-direction: column; /* Affiche les éléments en colonne */
