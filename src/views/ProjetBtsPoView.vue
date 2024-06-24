@@ -59,9 +59,9 @@ export default {
 
 <template>
   <div id="container-PO"> 
-    <h1 class="animated">Interface de paramétrage pour les journées Portes Ouvertes du Lycée Léonce Vieljeux</h1>
-    <h2 class="animated">Dans le cadre de mon projet de BTS, j'ai réalisé une application web en PHP/JS/MariaDB.<br> Cette application permet de configurer les différents points d'intéret du lycée pour ensuite être guidé automatiquement lors des journées portes ouvertes.</h2>
-    <h2 class="animated">L'application web est doté d'un système de connexion.</h2>
+    <h1>Interface de paramétrage pour les journées Portes Ouvertes du Lycée Léonce Vieljeux</h1>
+    <h2 >Dans le cadre de mon projet de BTS, j'ai réalisé une application web en PHP/JS/MariaDB.<br> Cette application permet de configurer les différents points d'intéret du lycée pour ensuite être guidé automatiquement lors des journées portes ouvertes.</h2>
+    <h2 >L'application web est doté d'un système de connexion.</h2>
     <img class="animated" src="/assets/projet-bts.PNG">
     <h2 class="animatedLtoR slide-to-left-scroll">Une fois connecté, l'utilisateur accède à l'interface de paramétrage des points d'intêrets.</h2>
     <img class="animatedLtoR slide-to-left-scroll"  src="/assets/projet-bts-param.PNG">
