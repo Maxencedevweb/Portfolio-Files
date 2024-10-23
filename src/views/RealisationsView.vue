@@ -1,5 +1,5 @@
 <script>
-import CardRealisations from '/src/components/CardRealisationsComponent.vue';
+import CardRealisations from '/src/components/CardRealisationsComponent.vue'
 
 export default {
   components: {
@@ -9,50 +9,62 @@ export default {
     return {
       cards: [
         {
-          redirectionLink:"/Projet-PO",
-          title: "Application web paramétrage",
-          imageUrl: "/Portfolio/assets/projet-bts.PNG",
-          status: "En cours",
-          content: "Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...",
-          iconTitles: ["IconJs", "IconPhp", "IconMariaDb"]
+          redirectionLink: '/TicTacToe',
+          title: 'Tic Tac Toe',
+          imageUrl: '/Portfolio/assets/projet-tictactoe.PNG',
+          status: 'Fini',
+          content:
+            "Projet réalisé un soir pour m'améliorer sur React, pour comparer avec le tutoriel officiel sur le site de React...",
+          iconTitles: ['IconReact', 'IconJs']
         },
         {
-          redirectionLink:"/Projet-PONG",
-          title: "Jeu Pong POO",
-          imageUrl: "/Portfolio/assets/projet-bts-pong.PNG",
-          status: "Fini",
-          content: "Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...",
-          iconTitles: ["IconC++", "IconQt"]
+          redirectionLink: '/Projet-PO',
+          title: 'Application web paramétrage',
+          imageUrl: '/Portfolio/assets/projet-bts.PNG',
+          status: 'Fini',
+          content:
+            'Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...',
+          iconTitles: ['IconJs', 'IconPhp', 'IconMariaDb']
         },
         {
-          redirectionLink:"/Projet-BN",
-          title: "Jeu Bataille navale",
-          imageUrl: "/Portfolio/assets/projet-bts-bataillenavale.PNG",
-          status: "Fini",
-          content: "Projet réalisé lors de mes études, un jeu bataille navale en C++...",
-          iconTitles: ["IconC++"]
+          redirectionLink: '/Projet-PONG',
+          title: 'Jeu Pong POO',
+          imageUrl: '/Portfolio/assets/projet-bts-pong.PNG',
+          status: 'Fini',
+          content:
+            'Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...',
+          iconTitles: ['IconC++', 'IconQt']
         },
         {
-          redirectionLink:"/Projet-FlappyBirdRA",
-          title: "Flappy Bird Réalité Augmentée",
-          imageUrl: "/Portfolio/assets/projet-flappybird.PNG",
-          status: "Fini",
-          content: "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
-          iconTitles: ["IconCSharp"]
+          redirectionLink: '/Projet-BN',
+          title: 'Jeu Bataille navale',
+          imageUrl: '/Portfolio/assets/projet-bts-bataillenavale.PNG',
+          status: 'Fini',
+          content: 'Projet réalisé lors de mes études, un jeu bataille navale en C++...',
+          iconTitles: ['IconC++']
+        },
+        {
+          redirectionLink: '/Projet-FlappyBirdRA',
+          title: 'Flappy Bird Réalité Augmentée',
+          imageUrl: '/Portfolio/assets/projet-flappybird.PNG',
+          status: 'Fini',
+          content:
+            "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
+          iconTitles: ['IconCSharp']
         }
       ],
       animatedCards: [] // Tableau pour stocker les index des cartes animées
-    };
+    }
   },
   mounted() {
     // Ajoutons une classe "animated" à chaque carte après un délai
     this.cards.forEach((_, index) => {
       setTimeout(() => {
-        this.animatedCards.push(index);
-      }, index * 250); // Ajoutons un délai de 500ms entre chaque animation
-    });
+        this.animatedCards.push(index)
+      }, index * 250) // Ajoutons un délai de 500ms entre chaque animation
+    })
   }
-};
+}
 </script>
 
 <template>
@@ -66,15 +78,12 @@ export default {
       :statusCard="card.status"
       :contentCard="card.content"
       :iconTitles="card.iconTitles"
-      :class="{ 'card-component': true, 'animatedcard': animatedCards.includes(index) }"
+      :class="{ 'card-component': true, animatedcard: animatedCards.includes(index) }"
     ></CardRealisations>
   </div>
 </template>
 
-
 <style scoped>
-
-
 #container-realisations {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -82,7 +91,6 @@ export default {
   padding-left: 50px; /* Ajoute un padding de 50px à gauche */
   padding-right: 50px; /* Ajoute un padding de 50px à droite */
 }
-
 
 .card-component {
   margin-left: auto; /* Déplace le conteneur vers la droite pour aligner le padding à gauche */
@@ -92,11 +100,10 @@ export default {
 }
 
 .card:hover {
-  scale:1.15; /* Zoom de 150% lorsque la souris survole */
+  scale: 1.15; /* Zoom de 150% lorsque la souris survole */
 }
-  
+
 .animatedcard {
   animation: slide-to-bottom 1s ease-out forwards; /* Utilisez une animation pour déplacer la carte du haut et descendre */
 }
-
 </style>

@@ -6,7 +6,7 @@
 <template>
   <div id="container-home"> 
     <h1>À propos de moi.</h1>
-    <h2>Passionné par l'informatique depuis toujours. Actuellement édudiant en BTS SNIR.</h2>
+    <h2>Passionné par l'informatique depuis toujours. A la recherche d'une alternance en Licence pro MIAW.</h2>
     <div class="icons">
       <a href="https://github.com/Maxencedevweb" target="_blank">
         <img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" class="icon" />
@@ -55,7 +55,7 @@ h1 {
   font-weight: 700;
   font-size: 60px;
   justify-content: center;
-  animation: descendre 1s ease-out forwards;
+  animation: opacity 0.5s ease-in forwards;
 
 }
 
@@ -63,7 +63,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  animation: descendre 1.2s ease-out forwards;
+  animation: opacity 0.9s ease-in forwards;
 }
 
 .dark-mode h1 {
