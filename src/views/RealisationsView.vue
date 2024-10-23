@@ -9,7 +9,7 @@ export default {
     return {
       cards: [
         {
-          redirectionLink: '/TicTacToe',
+          redirectionLink: 'https://maxencedevweb.github.io/TicTacToe-Site/',
           title: 'Tic Tac Toe',
           imageUrl: '/Portfolio/assets/projet-tictactoe.PNG',
           status: 'Fini',

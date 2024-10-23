@@ -12,23 +12,43 @@ export default {
     statusCard: String,
     contentCard: String,
     iconTitles: Array // Utilisez une liste de titres d'icônes
+  },
+  computed: {
+    isExternalLink() {
+      return this.redirectionLink.startsWith('http')
+    }
   }
 }
 </script>
 
 <template>
   <div class="card">
-    <router-link :to="redirectionLink">
-      <h1>{{ titleCard }}</h1>
-      <img :src="imageUrl" alt="Card image" />
-      <div class="card-content">
-        <p>Statut : {{ statusCard }}</p>
-        <p>{{ contentCard }}</p>
-        <div class="icons-container">
-          <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+    <template v-if="isExternalLink">
+      <a :href="redirectionLink" target="_blank" rel="noopener noreferrer">
+        <h1>{{ titleCard }}</h1>
+        <img :src="imageUrl" alt="Card image" />
+        <div class="card-content">
+          <p>Statut : {{ statusCard }}</p>
+          <p>{{ contentCard }}</p>
+          <div class="icons-container">
+            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+          </div>
         </div>
-      </div>
-    </router-link>
+      </a>
+    </template>
+    <template v-else>
+      <router-link :to="redirectionLink">
+        <h1>{{ titleCard }}</h1>
+        <img :src="imageUrl" alt="Card image" />
+        <div class="card-content">
+          <p>Statut : {{ statusCard }}</p>
+          <p>{{ contentCard }}</p>
+          <div class="icons-container">
+            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+          </div>
+        </div>
+      </router-link>
+    </template>
   </div>
 </template>
 
@@ -36,7 +56,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 .card {
   width: 500px; /* La carte prend 1/4 de la largeur de l'écran */
-
   border-radius: 18px; /* Ajoute un peu de bord arrondi à la carte */
   padding: 10px; /* Ajoute un peu d'espacement à l'intérieur de la carte */
   display: flex; /* Utilise flexbox pour centrer le contenu */

@@ -17,11 +17,6 @@ const router = createRouter({
       component: RealisationsView
     },
     {
-      path: '/TicTacToe',
-      name: 'projet-tictactoe',
-      component: RealisationsView
-    },
-    {
       path: '/Projet-PO',
       name: 'projet-po',
       component: ProjetBtsPoView
