@@ -17,7 +17,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll(); // Appel initial de la fonction pour gérer l'état initial
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
