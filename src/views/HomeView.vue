@@ -1,18 +1,23 @@
-<script setup>
-
-</script>
-
+<script setup></script>
 
 <template>
-  <div id="container-home"> 
+  <div id="container-home">
     <h1>À propos de moi.</h1>
-    <h2>Passionné par l'informatique depuis toujours. A la recherche d'une alternance en Licence pro MIAW.</h2>
+    <h2>
+      Passionné par l'informatique depuis toujours. A la recherche d'une alternance en Licence pro
+      MIAW.
+    </h2>
     <div class="icons">
       <a href="https://github.com/Maxencedevweb" target="_blank">
         <img src="/assets/icons/github.svg" title="Mon github" alt="Icone github" class="icon" />
       </a>
       <a href="https://linkedin.com/in/maxence-hirault-90b66324b" target="_blank">
-        <img src="/assets/icons/linkedin.svg" title="Mon linkedin" alt="Icone linkedin" class="icon" />
+        <img
+          src="/assets/icons/linkedin.svg"
+          title="Mon linkedin"
+          alt="Icone linkedin"
+          class="icon"
+        />
       </a>
     </div>
   </div>
@@ -30,16 +35,15 @@
   }
 }
 
-
 #container-home {
-    position: absolute; /* Positionnement absolu par rapport à la page */
-    top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
-    padding-left: 10%;
-    text-align: left; /* Centre le contenu horizontalement */
-  }
+  position: absolute; /* Positionnement absolu par rapport à la page */
+  top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
+  padding-left: 10%;
+  text-align: left; /* Centre le contenu horizontalement */
+}
 
 .icons {
-    display: flex;
+  display: flex;
 }
 
 .icon {
@@ -49,18 +53,16 @@
   animation: opacity 1.8s ease-in forwards;
 }
 
-
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 60px;
   justify-content: center;
   animation: opacity 0.5s ease-in forwards;
-
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 20px;
   animation: opacity 0.9s ease-in forwards;
@@ -70,13 +72,13 @@ h2 {
   color: #ffffff;
 }
 .dark-mode h2 {
-  color: #B4B4B4;
+  color: #b4b4b4;
 }
 
 .light-mode h1 {
-  color:#65636D;
+  color: #65636d;
 }
 .light-mode h2 {
-  color:#211F26;
+  color: #211f26;
 }
 </style>
