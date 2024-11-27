@@ -9,13 +9,13 @@ export default {
     return {
       cards: [
         {
-          redirectionLink: 'https://maxencedevweb.github.io/TicTacToe-Site/',
+          redirectionLink: 'https://maxencedevweb.github.io/TicTacToe/',
           title: 'Tic Tac Toe',
           imageUrl: '/Portfolio/assets/projet-tictactoe.PNG',
           status: 'Fini',
           content:
             "Projet réalisé un soir pour m'améliorer sur React, pour comparer avec le tutoriel officiel sur le site de React...",
-          iconTitles: ['IconReact','IconVite', 'IconJs']
+          iconTitles: ['IconReact', 'IconVite', 'IconJs']
         },
         {
           redirectionLink: '/Projet-PO',
