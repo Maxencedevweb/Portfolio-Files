@@ -15,7 +15,10 @@ export default {
         IconCSharp: '/Portfolio/assets/icons/csharp.svg',
         IconQt: '/Portfolio/assets/icons/qt.svg',
         IconReact: '/Portfolio/assets/icons/react.svg',
-        IconVite: '/Portfolio/assets/icons/vite.svg'
+        IconVite: '/Portfolio/assets/icons/vite.svg',
+        IconSymfony: '/Portfolio/assets/icons/symfony.svg',
+        IconWordpress: '/Portfolio/assets/icons/wordpress.svg',
+        IconFigma: '/Portfolio/assets/icons/figma.svg'
         // Ajoutez d'autres titres d'icônes avec leur chemin SVG associé
       }
       // Retourne le chemin de l'icône correspondant au titre ou null s'il n'existe pas
@@ -33,7 +36,10 @@ export default {
         IconCSharp: 'Icone C#',
         IconQt: 'Icone Qt5',
         IconReact: 'Icone React',
-        IconVite: 'Icone ViteJs'
+        IconVite: 'Icone ViteJs',
+        IconSymfony: 'Icone Symfony',
+        IconWordpress: 'Icone Wordpress',
+        IconFigma: 'Icone Figma'
         // Ajoutez d'autres titres d'icônes avec leur texte alt approprié
       }
       // Retourne le texte alt correspondant au titre de l'icône ou une chaîne vide si le titre n'est pas trouvé

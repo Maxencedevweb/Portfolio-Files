@@ -9,7 +9,26 @@ export default {
     return {
       cards: [
         {
+          redirectionLink: '#',
+          title: 'Lettre en lumière',
+          imageUrl: '/Portfolio/assets/projet-lel.PNG',
+          status: 'En cours',
+          content:
+            "Projet réalisé en équipe lors de ma formation, pour aider les personnes illétrées à apprendre la lecture et l'écriture de la langue française...",
+          iconTitles: ['IconReact', 'IconVite', 'IconSymfony', 'IconJs']
+        },
+        {
+          redirectionLink: '#',
+          title: 'JazzInOut',
+          imageUrl: '/Portfolio/assets/projet-jazz.PNG',
+          status: 'En cours',
+          content:
+            "Projet réalisé en équipe lors de ma formation, refonte du site web de l'association JazzInOut qui organise le festival de Jazz gratuit JazzInAout à La Rochelle...",
+          iconTitles: ['IconWordpress', 'IconFigma']
+        },
+        {
           redirectionLink: 'https://maxencedevweb.github.io/TicTacToe/',
+          activeLink: true,
           title: 'Tic Tac Toe',
           imageUrl: '/Portfolio/assets/projet-tictactoe.PNG',
           status: 'Fini',
@@ -19,6 +38,7 @@ export default {
         },
         {
           redirectionLink: '/Projet-PO',
+          activeLink: true,
           title: 'Application web paramétrage',
           imageUrl: '/Portfolio/assets/projet-bts.PNG',
           status: 'Fini',
@@ -27,7 +47,7 @@ export default {
           iconTitles: ['IconJs', 'IconPhp', 'IconMariaDb']
         },
         {
-          redirectionLink: '/Projet-PONG',
+          redirectionLink: '#',
           title: 'Jeu Pong POO',
           imageUrl: '/Portfolio/assets/projet-bts-pong.PNG',
           status: 'Fini',
@@ -36,7 +56,7 @@ export default {
           iconTitles: ['IconC++', 'IconQt']
         },
         {
-          redirectionLink: '/Projet-BN',
+          redirectionLink: '#',
           title: 'Jeu Bataille navale',
           imageUrl: '/Portfolio/assets/projet-bts-bataillenavale.PNG',
           status: 'Fini',
@@ -44,7 +64,7 @@ export default {
           iconTitles: ['IconC++']
         },
         {
-          redirectionLink: '/Projet-FlappyBirdRA',
+          redirectionLink: '#',
           title: 'Flappy Bird Réalité Augmentée',
           imageUrl: '/Portfolio/assets/projet-flappybird.PNG',
           status: 'Fini',
