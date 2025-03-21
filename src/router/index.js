@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import RealisationsView from '@/views/RealisationsView.vue'
 import ProjetBtsPoView from '@/views/ProjetBtsPoView.vue'
 
 const router = createRouter({
-  history: createWebHistory('/Portfolio/'),
+  history: createWebHashHistory('/Portfolio/'),
   routes: [
     {
       path: '/',
