@@ -1,12 +1,15 @@
 <script>
 import CardRealisations from '/src/components/CardRealisationsComponent.vue'
+import FilterRealisations from '/src/components/FilterRealisationsComponent.vue'
 
 export default {
   components: {
-    CardRealisations
+    CardRealisations,
+    FilterRealisations
   },
   data() {
     return {
+      selectedCategory: 'Tous',
       cards: [
         {
           redirectionLink: '',
@@ -14,7 +17,7 @@ export default {
           title: 'Extension Chrome - X (Twitter) Refresh Feed',
           imageUrl: '/Portfolio/assets/projet-twitterrefresh.PNG',
           status: 'Fini',
-          category: 'Site',
+          category: 'Plugins',
           content:
             'Une simple extension chrome qui permet de réactualiser son fil sur <a href="https://x.com/home" target="_blank">X.com</a> (twitter) avec un bouton...',
           iconTitles: ['IconJs']
@@ -25,7 +28,7 @@ export default {
           title: 'Lettre en lumière',
           imageUrl: '/Portfolio/assets/projet-lel.PNG',
           status: 'En cours',
-          category: 'Site',
+          category: 'Sites',
           content:
             "Projet réalisé en équipe lors de ma formation, pour aider les personnes illétrées/analphabètes et atteintes d'illectronisme à apprendre la lecture et l'écriture de la langue française...",
           iconTitles: ['IconReact', 'IconVite', 'IconSymfony', 'IconJs']
@@ -36,7 +39,7 @@ export default {
           title: 'JazzInOut',
           imageUrl: '/Portfolio/assets/projet-jazz.PNG',
           status: 'En cours',
-          category: 'Site',
+          category: 'Sites',
           content:
             "Projet réalisé en équipe lors de ma formation, refonte du site web de l'association JazzInOut qui organise le festival de Jazz gratuit JazzInAout à La Rochelle...",
           iconTitles: ['IconWordpress', 'IconFigma']
@@ -58,7 +61,7 @@ export default {
           title: 'Application web paramétrage',
           imageUrl: '/Portfolio/assets/projet-bts.PNG',
           status: 'Fini',
-          category: 'Site',
+          category: 'Sites',
           content:
             'Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...',
           iconTitles: ['IconJs', 'IconPhp', 'IconMariaDb']
@@ -96,30 +99,66 @@ export default {
       animatedCards: [] // Tableau pour stocker les index des cartes animées
     }
   },
+  computed: {
+    // Récupérer toutes les catégories uniques
+    categories() {
+      return [...new Set(this.cards.map((card) => card.category))]
+    },
+    // Filtrer les cartes selon la catégorie sélectionnée
+    filteredCards() {
+      if (this.selectedCategory === 'Tous') {
+        return this.cards
+      }
+      return this.cards.filter((card) => card.category === this.selectedCategory)
+    }
+  },
+  methods: {
+    filterByCategory(category) {
+      this.selectedCategory = category
+      this.animatedCards = [] // Réinitialiser les animations
+
+      // Réappliquer les animations pour les cartes filtrées
+      this.$nextTick(() => {
+        this.filteredCards.forEach((_, index) => {
+          setTimeout(() => {
+            this.animatedCards.push(index)
+          }, index * 250)
+        })
+      })
+    }
+  },
   mounted() {
     // Ajoutons une classe "animated" à chaque carte après un délai
     this.cards.forEach((_, index) => {
       setTimeout(() => {
         this.animatedCards.push(index)
-      }, index * 250) // Ajoutons un délai de 500ms entre chaque animation
+      }, index * 250)
     })
   }
 }
 </script>
 
 <template>
-  <div id="container-realisations">
-    <CardRealisations
-      v-for="(card, index) in cards"
-      :key="index"
-      :redirectionLink="card.redirectionLink"
-      :titleCard="card.title"
-      :imageUrl="card.imageUrl"
-      :statusCard="card.status"
-      :contentCard="card.content"
-      :iconTitles="card.iconTitles"
-      :class="{ 'card-component': true, animatedcard: animatedCards.includes(index) }"
-    ></CardRealisations>
+  <div>
+    <FilterRealisations
+      :categories="categories"
+      :selectedCategory="selectedCategory"
+      @filter-category="filterByCategory"
+    />
+    <div id="container-realisations">
+      <CardRealisations
+        v-for="(card, index) in filteredCards"
+        :key="index"
+        :redirectionLink="card.redirectionLink"
+        :activeLink="card.activeLink"
+        :titleCard="card.title"
+        :imageUrl="card.imageUrl"
+        :statusCard="card.status"
+        :contentCard="card.content"
+        :iconTitles="card.iconTitles"
+        :class="{ 'card-component': true, animatedcard: animatedCards.includes(index) }"
+      ></CardRealisations>
+    </div>
   </div>
 </template>
 
@@ -145,5 +184,16 @@ export default {
 
 .animatedcard {
   animation: slide-to-bottom 1s ease-out forwards; /* Utilisez une animation pour déplacer la carte du haut et descendre */
+}
+
+@keyframes slide-to-bottom {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 </style>

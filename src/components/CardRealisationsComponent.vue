@@ -1,5 +1,5 @@
 <script>
-import Icon from '/src/components/icons/Icon.vue' // Importez votre composant Icon
+import Icon from '/src/components/icons/Icon.vue'
 
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
     imageUrl: String,
     statusCard: String,
     contentCard: String,
-    iconTitles: Array // Utilisez une liste de titres d'icônes
+    iconTitles: Array
   },
   computed: {
     isExternalLink() {
