@@ -24,12 +24,17 @@ export default {
 <template>
   <div class="card">
     <template v-if="isExternalLink">
-      <a :href="redirectionLink" target="_blank" rel="noopener noreferrer">
+      <a
+        :href="redirectionLink"
+        target="_blank"
+        rel="noopener noreferrer"
+        :style="redirectionLink !== '' ? { cursor: 'pointer' } : {}"
+      >
         <h1>{{ titleCard }}</h1>
         <img :src="imageUrl" alt="Card image" />
         <div class="card-content">
           <p>Statut : {{ statusCard }}</p>
-          <p>{{ contentCard }}</p>
+          <p v-html="contentCard"></p>
           <div class="icons-container">
             <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
           </div>
@@ -37,17 +42,32 @@ export default {
       </a>
     </template>
     <template v-else>
-      <router-link :to="redirectionLink">
+      <router-link
+        v-if="redirectionLink !== ''"
+        :to="redirectionLink"
+        :style="{ cursor: 'pointer' }"
+      >
         <h1>{{ titleCard }}</h1>
         <img :src="imageUrl" alt="Card image" />
         <div class="card-content">
           <p>Statut : {{ statusCard }}</p>
-          <p>{{ contentCard }}</p>
+          <p v-html="contentCard"></p>
           <div class="icons-container">
             <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
           </div>
         </div>
       </router-link>
+      <div v-else>
+        <h1>{{ titleCard }}</h1>
+        <img :src="imageUrl" alt="Card image" />
+        <div class="card-content">
+          <p>Statut : {{ statusCard }}</p>
+          <p v-html="contentCard"></p>
+          <div class="icons-container">
+            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+          </div>
+        </div>
+      </div>
     </template>
   </div>
 </template>
@@ -68,7 +88,7 @@ export default {
   margin-top: 0;
   margin-bottom: 10px; /* Supprime la marge supérieure par défaut du titre */
   font-size: 30px; /* Taille de police pour le titre */
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Helvetica', serif;
   font-weight: 700;
   display: flex; /* Utilise flexbox pour centrer le contenu */
   flex-direction: column; /* Affiche les éléments en colonne */
@@ -90,11 +110,14 @@ export default {
   margin-left: 8px;
   margin-right: 8px;
   font-size: 15; /* Taille de police pour le titre */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 700;
 }
 .card a {
   text-decoration: none;
+}
+a {
+  all: unset;
 }
 .icons-container {
   display: flex;

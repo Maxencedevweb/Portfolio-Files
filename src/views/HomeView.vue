@@ -4,8 +4,8 @@
   <div id="container-home">
     <h1>À propos de moi.</h1>
     <h2>
-      Passionné par l'informatique depuis toujours. A la recherche d'une alternance en Licence pro
-      MIAW.
+      Passionné par l'informatique depuis toujours. A la recherche d'un stage de 12 à 16 semaines
+      entre le 15 avril et le 31 aout 2025 pour conclure mon année de Licence Pro MIAW.
     </h2>
     <div class="icons">
       <a href="https://github.com/Maxencedevweb" target="_blank">
@@ -40,6 +40,8 @@
   top: 35%; /* Déplace le contenu de moitié de la hauteur de la page */
   padding-left: 10%;
   text-align: left; /* Centre le contenu horizontalement */
+  min-width: 400px;
+  max-width: 50vw;
 }
 
 .icons {

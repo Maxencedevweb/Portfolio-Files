@@ -9,19 +9,34 @@ export default {
     return {
       cards: [
         {
-          redirectionLink: '#',
+          redirectionLink: '',
+          activeLink: true,
+          title: 'Extension Chrome - X (Twitter) Refresh Feed',
+          imageUrl: '/Portfolio/assets/projet-twitterrefresh.PNG',
+          status: 'Fini',
+          category: 'Site',
+          content:
+            'Une simple extension chrome qui permet de réactualiser son fil sur <a href="https://x.com/home" target="_blank">X.com</a> (twitter) avec un bouton...',
+          iconTitles: ['IconJs']
+        },
+        {
+          redirectionLink: 'https://maxencedevweb.github.io/LettreEnLumiere/',
+          activeLink: true,
           title: 'Lettre en lumière',
           imageUrl: '/Portfolio/assets/projet-lel.PNG',
           status: 'En cours',
+          category: 'Site',
           content:
-            "Projet réalisé en équipe lors de ma formation, pour aider les personnes illétrées à apprendre la lecture et l'écriture de la langue française...",
+            "Projet réalisé en équipe lors de ma formation, pour aider les personnes illétrées/analphabètes et atteintes d'illectronisme à apprendre la lecture et l'écriture de la langue française...",
           iconTitles: ['IconReact', 'IconVite', 'IconSymfony', 'IconJs']
         },
         {
-          redirectionLink: '#',
+          redirectionLink: '',
+          activeLink: false,
           title: 'JazzInOut',
           imageUrl: '/Portfolio/assets/projet-jazz.PNG',
           status: 'En cours',
+          category: 'Site',
           content:
             "Projet réalisé en équipe lors de ma formation, refonte du site web de l'association JazzInOut qui organise le festival de Jazz gratuit JazzInAout à La Rochelle...",
           iconTitles: ['IconWordpress', 'IconFigma']
@@ -32,42 +47,47 @@ export default {
           title: 'Tic Tac Toe',
           imageUrl: '/Portfolio/assets/projet-tictactoe.PNG',
           status: 'Fini',
+          category: 'Jeux',
           content:
             "Projet réalisé un soir pour m'améliorer sur React, pour comparer avec le tutoriel officiel sur le site de React...",
           iconTitles: ['IconReact', 'IconVite', 'IconJs']
         },
         {
           redirectionLink: '/Projet-PO',
-          activeLink: true,
+          activeLink: false,
           title: 'Application web paramétrage',
           imageUrl: '/Portfolio/assets/projet-bts.PNG',
           status: 'Fini',
+          category: 'Site',
           content:
             'Projet réalisé lors de mes études, une application web pour alléger la logistique lors des journées Portes Ouvertes...',
           iconTitles: ['IconJs', 'IconPhp', 'IconMariaDb']
         },
         {
-          redirectionLink: '#',
+          redirectionLink: '',
           title: 'Jeu Pong POO',
           imageUrl: '/Portfolio/assets/projet-bts-pong.PNG',
           status: 'Fini',
+          category: 'Jeux',
           content:
             'Projet réalisé lors de mes études, un jeu Pong en C++ Programmation Orientée Objet...',
           iconTitles: ['IconC++', 'IconQt']
         },
         {
-          redirectionLink: '#',
+          redirectionLink: '',
           title: 'Jeu Bataille navale',
           imageUrl: '/Portfolio/assets/projet-bts-bataillenavale.PNG',
           status: 'Fini',
+          category: 'Jeux',
           content: 'Projet réalisé lors de mes études, un jeu bataille navale en C++...',
           iconTitles: ['IconC++']
         },
         {
-          redirectionLink: '#',
+          redirectionLink: '',
           title: 'Flappy Bird Réalité Augmentée',
           imageUrl: '/Portfolio/assets/projet-flappybird.PNG',
           status: 'Fini',
+          category: 'Jeux',
           content:
             "Projet réalisé en tant que stagiaire dans l'entreprise Ullo, une copie du jeu mobile Flappy Bird en réalité augmentée.",
           iconTitles: ['IconCSharp']
