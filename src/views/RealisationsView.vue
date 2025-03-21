@@ -149,13 +149,7 @@ export default {
       <CardRealisations
         v-for="(card, index) in filteredCards"
         :key="index"
-        :redirectionLink="card.redirectionLink"
-        :activeLink="card.activeLink"
-        :titleCard="card.title"
-        :imageUrl="card.imageUrl"
-        :statusCard="card.status"
-        :contentCard="card.content"
-        :iconTitles="card.iconTitles"
+        :card="card"
         :class="{ 'card-component': true, animatedcard: animatedCards.includes(index) }"
       ></CardRealisations>
     </div>

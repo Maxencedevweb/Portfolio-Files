@@ -6,16 +6,11 @@ export default {
     Icon
   },
   props: {
-    redirectionLink: String,
-    titleCard: String,
-    imageUrl: String,
-    statusCard: String,
-    contentCard: String,
-    iconTitles: Array
+    card: Object
   },
   computed: {
     isExternalLink() {
-      return this.redirectionLink.startsWith('http')
+      return this.card.redirectionLink.startsWith('http')
     }
   }
 }
@@ -25,46 +20,49 @@ export default {
   <div class="card">
     <template v-if="isExternalLink">
       <a
-        :href="redirectionLink"
+        :href="card.redirectionLink"
         target="_blank"
         rel="noopener noreferrer"
-        :style="redirectionLink !== '' ? { cursor: 'pointer' } : {}"
+        :style="card.redirectionLink !== '' ? { cursor: 'pointer' } : {}"
       >
-        <h1>{{ titleCard }}</h1>
-        <img :src="imageUrl" alt="Card image" />
+        <h1>{{ card.title }}</h1>
+        <img :src="card.imageUrl" alt="Card image" />
         <div class="card-content">
-          <p>Statut : {{ statusCard }}</p>
-          <p v-html="contentCard"></p>
+          <p>Statut : {{ card.status }}</p>
+          <p>Catégorie : {{ card.category }}</p>
+          <p v-html="card.content"></p>
           <div class="icons-container">
-            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+            <Icon v-for="(iconTitle, index) in card.iconTitles" :key="index" :title="iconTitle" />
           </div>
         </div>
       </a>
     </template>
     <template v-else>
       <router-link
-        v-if="redirectionLink !== ''"
-        :to="redirectionLink"
+        v-if="card.redirectionLink !== ''"
+        :to="card.redirectionLink"
         :style="{ cursor: 'pointer' }"
       >
-        <h1>{{ titleCard }}</h1>
+        <h1>{{ card.title }}</h1>
         <img :src="imageUrl" alt="Card image" />
         <div class="card-content">
-          <p>Statut : {{ statusCard }}</p>
-          <p v-html="contentCard"></p>
+          <p>Statut : {{ card.status }}</p>
+          <p>Catégorie : {{ card.category }}</p>
+          <p v-html="card.content"></p>
           <div class="icons-container">
-            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+            <Icon v-for="(iconTitle, index) in card.iconTitles" :key="index" :title="iconTitle" />
           </div>
         </div>
       </router-link>
       <div v-else>
-        <h1>{{ titleCard }}</h1>
-        <img :src="imageUrl" alt="Card image" />
+        <h1>{{ card.title }}</h1>
+        <img :src="card.imageUrl" alt="Card image" />
         <div class="card-content">
-          <p>Statut : {{ statusCard }}</p>
-          <p v-html="contentCard"></p>
+          <p>Statut : {{ card.status }}</p>
+          <p>Catégorie : {{ card.category }}</p>
+          <p v-html="card.content"></p>
           <div class="icons-container">
-            <Icon v-for="(iconTitle, index) in iconTitles" :key="index" :title="iconTitle" />
+            <Icon v-for="(iconTitle, index) in card.iconTitles" :key="index" :title="iconTitle" />
           </div>
         </div>
       </div>

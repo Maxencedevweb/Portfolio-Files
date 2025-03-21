@@ -8,10 +8,6 @@ export default {
     selectedCategory: {
       type: String,
       default: 'Tous'
-    },
-    isDarkMode: {
-      type: Boolean,
-      default: false
     }
   },
   methods: {
