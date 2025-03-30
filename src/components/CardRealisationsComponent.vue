@@ -44,7 +44,7 @@ export default {
         :style="{ cursor: 'pointer' }"
       >
         <h1>{{ card.title }}</h1>
-        <img :src="imageUrl" alt="Card image" />
+        <img :src="card.imageUrl" alt="Card image" />
         <div class="card-content">
           <p>Statut : {{ card.status }}</p>
           <p>Catégorie : {{ card.category }}</p>
