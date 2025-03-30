@@ -12,7 +12,8 @@ export default {
       selectedCategory: 'Tous',
       cards: [
         {
-          redirectionLink: '',
+          redirectionLink:
+            'https://chromewebstore.google.com/detail/twitter-refresh-button/jomfhefgipgnncbbaengandkapohjkod?authuser=3&hl=fr',
           activeLink: true,
           title: 'Extension Chrome - X (Twitter) Refresh Feed',
           imageUrl: '/Portfolio/assets/projet-twitterrefresh.PNG',
