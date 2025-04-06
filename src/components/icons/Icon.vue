@@ -18,7 +18,10 @@ export default {
         IconVite: '/Portfolio/assets/icons/vite.svg',
         IconSymfony: '/Portfolio/assets/icons/symfony.svg',
         IconWordpress: '/Portfolio/assets/icons/wordpress.svg',
-        IconFigma: '/Portfolio/assets/icons/figma.svg'
+        IconFigma: '/Portfolio/assets/icons/figma.svg',
+        IconAngular: '/Portfolio/assets/icons/angular.svg',
+        IconThreeJs: '/Portfolio/assets/icons/threejs.svg',
+        IconOpenLayer: '/Portfolio/assets/icons/openlayers.svg'
         // Ajoutez d'autres titres d'icônes avec leur chemin SVG associé
       }
       // Retourne le chemin de l'icône correspondant au titre ou null s'il n'existe pas

@@ -12,18 +12,6 @@ export default {
       selectedCategory: 'Tous',
       cards: [
         {
-          redirectionLink:
-            'https://chromewebstore.google.com/detail/twitter-refresh-button/jomfhefgipgnncbbaengandkapohjkod?authuser=3&hl=fr',
-          activeLink: true,
-          title: 'Extension Chrome - X (Twitter) Refresh Feed',
-          imageUrl: '/Portfolio/assets/projet-twitterrefresh.PNG',
-          status: 'Fini',
-          category: 'Plugins',
-          content:
-            'Une simple extension chrome qui permet de réactualiser son fil sur <a href="https://x.com/home" target="_blank">X.com</a> (twitter) avec un bouton...',
-          iconTitles: ['IconJs']
-        },
-        {
           redirectionLink: 'https://maxencedevweb.github.io/LettreEnLumiere/',
           activeLink: true,
           title: 'Lettre en lumière',
@@ -35,7 +23,7 @@ export default {
           iconTitles: ['IconReact', 'IconVite', 'IconSymfony', 'IconJs']
         },
         {
-          redirectionLink: '',
+          redirectionLink: 'https://apalmino.lpmiaw.univ-lr.fr/wordpress/',
           activeLink: false,
           title: 'JazzInOut',
           imageUrl: '/Portfolio/assets/projet-jazz.PNG',
@@ -44,6 +32,29 @@ export default {
           content:
             "Projet réalisé en équipe lors de ma formation, refonte du site web de l'association JazzInOut qui organise le festival de Jazz gratuit JazzInAout à La Rochelle...",
           iconTitles: ['IconWordpress', 'IconFigma']
+        },
+        {
+          redirectionLink: 'https://protovr.netlify.app/',
+          activeLink: true,
+          title: 'Prototype VR',
+          imageUrl: '/Portfolio/assets/projet-protovr.PNG',
+          status: 'Fini',
+          category: 'Sites',
+          content:
+            'Projet réalisé en parallèle de ma formation, pour créer un prototype de site web en réalité virtuelle avec Angular, Three.js et OpenLayer. Nécessite un casque VR ou un émulateur pour activer le mode VR...',
+          iconTitles: ['IconAngular', 'IconThreeJs', 'IconOpenLayer']
+        },
+        {
+          redirectionLink:
+            'https://chromewebstore.google.com/detail/twitter-refresh-button/jomfhefgipgnncbbaengandkapohjkod?authuser=3&hl=fr',
+          activeLink: true,
+          title: 'Extension Chrome - X (Twitter) Refresh Feed',
+          imageUrl: '/Portfolio/assets/projet-twitterrefresh.PNG',
+          status: 'Fini',
+          category: 'Plugins',
+          content:
+            'Une simple extension chrome qui permet de réactualiser son fil sur <a href="https://x.com/home" target="_blank">X.com</a> (twitter) avec un bouton...',
+          iconTitles: ['IconJs']
         },
         {
           redirectionLink: 'https://maxencedevweb.github.io/TicTacToe/',
