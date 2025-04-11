@@ -42,7 +42,10 @@ export default {
         IconVite: 'Icone ViteJs',
         IconSymfony: 'Icone Symfony',
         IconWordpress: 'Icone Wordpress',
-        IconFigma: 'Icone Figma'
+        IconFigma: 'Icone Figma',
+        IconAngular: 'Icone Angular',
+        IconThreeJs: 'Icone ThreeJs',
+        IconOpenLayer: 'Icone OpenLayer'
         // Ajoutez d'autres titres d'icônes avec leur texte alt approprié
       }
       // Retourne le texte alt correspondant au titre de l'icône ou une chaîne vide si le titre n'est pas trouvé
