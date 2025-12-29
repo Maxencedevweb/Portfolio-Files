@@ -4,8 +4,8 @@
   <div id="container-home">
     <h1>À propos de moi.</h1>
     <h2>
-      Passionné par l'informatique depuis toujours. A la recherche d'un stage de 12 à 16 semaines
-      entre le 15 avril et le 31 aout 2025 pour conclure mon année de Licence Pro MIAW.
+      Passionné par l'informatique depuis toujours. <br />
+      A la recherche d'opportunités dans le développement web.
     </h2>
     <div class="icons">
       <a href="https://github.com/Maxencedevweb" target="_blank">

@@ -12,7 +12,7 @@ export default {
       selectedCategory: 'Tous',
       cards: [
         {
-          redirectionLink: 'https://maxencedevweb.github.io/LettreEnLumiere/',
+          redirectionLink: 'https://github.com/nicolasunivlr/lettresenlumiere',
           activeLink: true,
           title: 'Lettre en lumière',
           imageUrl: '/Portfolio/assets/projet-lel.PNG',
@@ -23,11 +23,11 @@ export default {
           iconTitles: ['IconReact', 'IconVite', 'IconSymfony', 'IconJs']
         },
         {
-          redirectionLink: 'https://apalmino.lpmiaw.univ-lr.fr/wordpress/',
-          activeLink: false,
+          redirectionLink: 'https://jazzinout.fr',
+          activeLink: true,
           title: 'JazzInOut',
           imageUrl: '/Portfolio/assets/projet-jazz.PNG',
-          status: 'En cours',
+          status: 'Fini',
           category: 'Sites',
           content:
             "Projet réalisé en équipe lors de ma formation, refonte du site web de l'association JazzInOut qui organise le festival de Jazz gratuit JazzInAout à La Rochelle...",
