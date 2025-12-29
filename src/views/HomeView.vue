@@ -5,7 +5,7 @@
     <h1>À propos de moi.</h1>
     <h2>
       Passionné par l'informatique depuis toujours. <br />
-      A la recherche d'opportunités dans le développement web.
+      À la recherche d'opportunités dans le développement web.
     </h2>
     <div class="icons">
       <a href="https://github.com/Maxencedevweb" target="_blank">
