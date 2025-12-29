@@ -16,7 +16,7 @@ export default {
           activeLink: true,
           title: 'Lettre en lumière',
           imageUrl: '/Portfolio/assets/projet-lel.PNG',
-          status: 'En cours',
+          status: 'Fini',
           category: 'Sites',
           content:
             "Projet réalisé en équipe lors de ma formation, pour aider les personnes illétrées/analphabètes et atteintes d'illectronisme à apprendre la lecture et l'écriture de la langue française...",
